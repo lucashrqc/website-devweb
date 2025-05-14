@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Modelo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <img src="https://avatars.githubusercontent.com/u/108831421?v=4" alt="Imagem da logo do site" class="logo" />
+        <nav>
+          <div class="close-btn-container">
+            <button type="button" class="close-btn" onclick="toggleMenu()">
+              <img src="./assets/close-icon.svg" alt="Fechar menu" class="close-icon" />
+            </button>
+          </div>
+          <ul>
+            <li onclick="goTo('index.html')">Início</li>
+            <li onclick="goTo('about.html')">Sobre mim</li>
+            <li onclick="goTo('experience.html')">Experiência</li>
+            <li onclick="goTo('contact.html')">Contato</li>
+          </ul>
+        </nav>
+        <button type="button" class="nav-btn" onclick="toggleMenu()">
+          <img src="./assets/menu-icon.svg" alt="Menu" class="menu-icon" />
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="experience">
+        <h1>Experiências profissionais</h1>
+
+        <div class="card">
+          <h4 class="card-title">Desenvolvedor Front-end</h4>
+          <p class="card-description">Descrição da experiência.</p>
+        </div>
+        <div class="card">
+          <h4 class="card-title">Desenvolvedor Front-end</h4>
+          <p class="card-description">Descrição da experiência.</p>
+        </div>
+        <div class="card">
+          <h4 class="card-title">Desenvolvedor Front-end</h4>
+          <p class="card-description">Descrição da experiência.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script>
+    function goTo(page, element) {
+      window.location.href = page;
+    }
+
+    function toggleMenu() {
+      const isMobile = window.innerWidth <= 768;
+      if (!isMobile) return;
+
+      const menu = document.querySelector("nav");
+      if (!menu) return;
+      menu.classList.toggle("mobile-open");
+    }
+  </script>
+</html>

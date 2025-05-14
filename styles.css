@@ -1,0 +1,193 @@
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #50e3c2;
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+}
+
+* {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+div.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+img.logo {
+  width: 50px;
+  border-radius: 100%;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  cursor: pointer;
+  position: relative;
+}
+
+nav ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease-in-out;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+button {
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button.nav-btn {
+  display: none;
+}
+
+nav div.close-btn-container {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+
+nav div.close-btn-container button.close-btn {
+  display: none;
+}
+
+main {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 100px 20px 20px 20px;
+}
+
+section.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section.about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.card-description {
+  padding-left: 15px;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.about h1 {
+  text-align: center;
+}
+
+.about .card-description {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  div.header-container {
+    padding: 15px;
+  }
+
+  button.nav-btn {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    transition: all 0.3s ease-in-out;
+    right: -60vw;
+  }
+
+  nav.mobile-open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0vw;
+    width: 60vw;
+    height: 100vh;
+    background-color: var(--bg-color);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav.mobile-open ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav.mobile-open button.close-btn {
+    display: flex;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 2px;
+    border: none;
+    background-color: var(--primary-color);
+  }
+
+  section.experience h1 {
+    font-size: 20px;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .card-description {
+    font-size: 14px;
+  }
+}

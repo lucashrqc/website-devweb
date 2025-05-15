@@ -12,3 +12,7 @@ function toggleMenu() {
   if (!menu) return;
   menu.classList.toggle("mobile-open");
 }
+
+function openBookPage(url) {
+  window.open(url, "_blank", "noopener,noreferrer");
+}

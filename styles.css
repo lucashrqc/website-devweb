@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --primary-color: #4a90e2;
   --secondary-color: #50e3c2;
@@ -6,7 +8,7 @@
 }
 
 * {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -110,7 +112,8 @@ main {
   padding: 100px 20px 20px 20px;
 }
 
-main.contact {
+main.contact,
+main.about-main {
   max-width: 50rem;
   margin: 0 auto;
   padding: 100px 20px 20px 20px;
@@ -121,6 +124,14 @@ section.contact,
 section.portfolio,
 section.about {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section.about .card {
+  display: flex;
+  align-items: start;
+  justify-content: start;
   flex-direction: column;
   gap: 20px;
 }
@@ -167,6 +178,7 @@ section.portfolio .card-description {
 
 .about .card-description {
   font-size: 16px;
+  padding-left: 0px;
 }
 
 .company-logo {
@@ -187,13 +199,21 @@ section.hero {
   height: 85vh;
 }
 
-.hero-content {
-  height: 100%;
-}
-
 .hero-content,
 .aside {
   width: 100%;
+}
+
+.hero-content .card-title {
+  cursor: pointer;
+}
+
+.hero-content:hover {
+  transition: all 0.4s ease-in-out;
+}
+
+.hero-content:hover {
+  background-color: #a4c3fd4f;
 }
 
 .profile {
@@ -250,6 +270,58 @@ textarea {
   min-height: 100px;
 }
 
+.book-author {
+  font-size: 12px;
+}
+
+.book-sinopsis {
+  font-size: 14px;
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.book-price {
+  font-size: 14px;
+  width: fit-content;
+  padding: 5px;
+  margin-top: 5px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+/* Estilização pontual também abordada aqui */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-4 {
+  gap: 2rem;
+}
+.items-center {
+  align-items: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.m-0 {
+  margin: 0;
+}
+.relative {
+  position: relative;
+}
+/* ---------------------------------------- */
+
+/* Media Queries */
 @media screen and (max-width: 768px) {
   div.header-container {
     padding: 15px;
@@ -309,5 +381,14 @@ textarea {
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
+  }
+
+  section.experience .card {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    align-items: center;
   }
 }

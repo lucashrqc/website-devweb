@@ -9,11 +9,7 @@
   <body>
     <header>
       <div class="header-container">
-        <img
-          src="https://avatars.githubusercontent.com/u/108831421?v=4"
-          alt="Imagem da logo do site"
-          class="logo"
-        />
+        <h2>LHC</h2>
         <nav>
           <div class="close-btn-container">
             <button type="button" class="close-btn" onclick="toggleMenu()">
@@ -33,10 +29,32 @@
       </div>
     </header>
 
-    <main>
-      <section></section>
+    <main class="contact">
+      <section class="contact">
+        <h1>Entre em contato</h1>
+        <div class="card">
+          <form id="contact-form" onsubmit="onSend(event)">
+            <div>
+              <label for="name">Nome</label>
+              <input type="text" id="name" placeholder="Digite seu nome" required />
+            </div>
+
+            <div>
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="Digite seu e-mail" required />
+            </div>
+
+            <div>
+              <label for="message">Mensagem</label>
+              <textarea id="message" placeholder="Mensagem" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar</button>
+          </form>
+        </div>
+      </section>
     </main>
   </body>
 
-    <script src="./scripts/script.js"></script>
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/contact.js"></script>
 </html>

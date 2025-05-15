@@ -32,7 +32,7 @@ div.header-container {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 20px 10px;
   max-width: 80rem;
   margin: 0 auto;
 }
@@ -110,7 +110,16 @@ main {
   padding: 100px 20px 20px 20px;
 }
 
-section.experience {
+main.contact {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 100px 20px 20px 20px;
+}
+
+section.experience,
+section.contact,
+section.portfolio,
+section.about {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -118,9 +127,6 @@ section.experience {
 
 section.portfolio {
   margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 section.experience .card {
@@ -136,12 +142,6 @@ section.experience .card-description {
 
 section.portfolio .card-description {
   margin-bottom: 5px;
-}
-
-section.about {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
 .card {
@@ -177,6 +177,77 @@ section.about {
 
 .experience-info {
   margin-top: 5px;
+}
+
+section.hero {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 40px;
+  align-items: start;
+  height: 85vh;
+}
+
+.hero-content {
+  height: 100%;
+}
+
+.hero-content,
+.aside {
+  width: 100%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: fit-content;
+  align-self: flex-end;
+}
+
+form#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+
+label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+input,
+textarea {
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -232,5 +303,11 @@ section.about {
 
   .card-description {
     font-size: 14px;
+  }
+
+  section.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
   }
 }

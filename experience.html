@@ -9,7 +9,11 @@
   <body>
     <header>
       <div class="header-container">
-        <img src="https://avatars.githubusercontent.com/u/108831421?v=4" alt="Imagem da logo do site" class="logo" />
+        <img
+          src="https://avatars.githubusercontent.com/u/108831421?v=4"
+          alt="Imagem da logo do site"
+          class="logo"
+        />
         <nav>
           <div class="close-btn-container">
             <button type="button" class="close-btn" onclick="toggleMenu()">
@@ -30,37 +34,117 @@
     </header>
 
     <main>
+      <section class="portfolio">
+        <h1>Portfólio</h1>
+
+        <div class="card">
+          <h4 class="card-title">Sistemas e websites</h4>
+          <p class="card-description">
+            <a href="https://sgmaster.com.br/" target="_blank" rel="noopener noreferrer"
+              >SGBR Master Web</a
+            >
+          </p>
+          <p class="card-description">
+            <a href="https://dev.ezbzlabs.com/" target="_blank" rel="noopener noreferrer"
+              >EZBZ Labs</a
+            >
+          </p>
+          <p class="card-description">
+            <a href="https://camilavieira.netlify.app/" target="_blank" rel="noopener noreferrer"
+              >Site Camila Vieira</a
+            >
+          </p>
+        </div>
+        <div class="card">
+          <h4 class="card-title">Repositórios e redes sociais</h4>
+          <p class="card-description">
+            <a href="https://github.com/lucashrqc" target="_blank" rel="noopener noreferrer"
+              >GitHub</a
+            >
+          </p>
+          <p class="card-description">
+            <a
+              href="https://www.linkedin.com/in/lucashrqc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </p>
+          <p class="card-description">
+            <a
+              href="https://whatsa.me/5547996859730/?t=Ol%C3%A1%20Lucas,%20tudo%20bem?"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Whatsapp</a
+            >
+          </p>
+        </div>
+      </section>
+
       <section class="experience">
         <h1>Experiências profissionais</h1>
 
         <div class="card">
-          <h4 class="card-title">Desenvolvedor Front-end</h4>
-          <p class="card-description">Descrição da experiência.</p>
+          <img
+            src="https://www.deloitte.com/content/dam/assets-shared/logos/svg/a-d/deloitte-logo.svg"
+            alt="Logo da Deloitte"
+            class="company-logo"
+          />
+          <div class="card-content">
+            <h4 class="card-title">Desenvolvedor Front-end</h4>
+            <p class="card-description">Deloitte Touche Tohmatsu Limited ("DTTL").</p>
+            <p class="card-description experience-info">
+              <i
+                >"Implementando melhorias em sistema de gestão de carreira e agendamento de reuniões
+                para fins de indicadores de performance dos profissionais."</i
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://sgmaster.com.br/images/fullLogo.svg"
+            alt="Logo da SGBR Sistemas"
+            class="company-logo"
+          />
+          <div class="card-content">
+            <h4 class="card-title">Desenvolvedor Front-end</h4>
+            <p class="card-description">SGBR Sistemas.</p>
+            <p class="card-description experience-info">
+              <i
+                >"Desenvolvedor front-end especializado em Vue e JavaScript ES6, com histórico
+                comprovado na criação de interfaces intuitivas de alto desempenho, incluindo um PDV
+                que processou R$900K em dezembro/2024. Otimizou requisições de API, reduzindo tempos
+                de resposta em 70%, enquanto mentora colegas menos experientes na interpretação de
+                requisitos e resolução de problemas complexos."</i
+              >
+            </p>
+          </div>
         </div>
         <div class="card">
-          <h4 class="card-title">Desenvolvedor Front-end</h4>
-          <p class="card-description">Descrição da experiência.</p>
-        </div>
-        <div class="card">
-          <h4 class="card-title">Desenvolvedor Front-end</h4>
-          <p class="card-description">Descrição da experiência.</p>
+          <img
+            src="https://dev.ezbzlabs.com/assets/images/ezbzlogo.svg"
+            alt="Logo da EZBZ Software"
+            class="company-logo"
+          />
+          <div class="card-content">
+            <h4 class="card-title">Desenvolvedor Fullstack</h4>
+            <p class="card-description">EZBZ Software.</p>
+            <p class="card-description experience-info">
+              <i
+                >"Desenvolvedor full stack com experiência em PHP, Laravel e Vue, criando soluções
+                abrangentes para CRM que incluem interfaces intuitivas, bancos de dados e
+                automações. Implementou recursos avançados como busca geolocalizada via API do
+                Google Maps, website builder personalizado e sistema de chat interativo com
+                funcionalidade de @menção."</i
+              >
+            </p>
+          </div>
         </div>
       </section>
     </main>
   </body>
 
-  <script>
-    function goTo(page, element) {
-      window.location.href = page;
-    }
-
-    function toggleMenu() {
-      const isMobile = window.innerWidth <= 768;
-      if (!isMobile) return;
-
-      const menu = document.querySelector("nav");
-      if (!menu) return;
-      menu.classList.toggle("mobile-open");
-    }
-  </script>
+    <script src="./scripts/script.js"></script>
 </html>

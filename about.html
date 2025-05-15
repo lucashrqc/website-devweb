@@ -43,18 +43,5 @@
     </main>
   </body>
 
-  <script>
-    function goTo(page, element) {
-      window.location.href = page;
-    }
-
-    function toggleMenu() {
-      const isMobile = window.innerWidth <= 768;
-      if (!isMobile) return;
-
-      const menu = document.querySelector("nav");
-      if (!menu) return;
-      menu.classList.toggle("mobile-open");
-    }
-  </script>
+    <script src="./scripts/script.js"></script>
 </html>

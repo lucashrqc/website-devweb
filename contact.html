@@ -9,7 +9,11 @@
   <body>
     <header>
       <div class="header-container">
-        <img src="https://avatars.githubusercontent.com/u/108831421?v=4" alt="Imagem da logo do site" class="logo" />
+        <img
+          src="https://avatars.githubusercontent.com/u/108831421?v=4"
+          alt="Imagem da logo do site"
+          class="logo"
+        />
         <nav>
           <div class="close-btn-container">
             <button type="button" class="close-btn" onclick="toggleMenu()">
@@ -34,18 +38,5 @@
     </main>
   </body>
 
-  <script>
-    function goTo(page, element) {
-      window.location.href = page;
-    }
-
-    function toggleMenu() {
-      const isMobile = window.innerWidth <= 768;
-      if (!isMobile) return;
-
-      const menu = document.querySelector("nav");
-      if (!menu) return;
-      menu.classList.toggle("mobile-open");
-    }
-  </script>
+    <script src="./scripts/script.js"></script>
 </html>

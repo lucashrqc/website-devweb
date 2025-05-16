@@ -68,7 +68,7 @@ nav ul li::after {
   width: 0;
   height: 2px;
   background-color: var(--primary-color);
-  transition: width 0.3s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 nav ul li:hover::after {
@@ -213,7 +213,7 @@ section.hero {
 }
 
 .hero-content:hover {
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .hero-content:hover {
@@ -352,7 +352,7 @@ textarea {
   nav.mobile-open {
     background-color: var(--bg-color);
     transform: translateX(0);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
     z-index: 5;
   }
 

@@ -13,6 +13,22 @@ function toggleMenu() {
   menu.classList.toggle("mobile-open");
 }
 
+// Abre uma nova página ao clicar no botão "ver mais" ou no título do livro
 function openBookPage(url) {
   window.open(url, "_blank", "noopener,noreferrer");
 }
+
+// Fecha o menu responsivo ao clicar fora dele
+window.addEventListener("click", (event) => {
+  const nav = document.querySelector("nav");
+  if (!nav) return;
+
+  if (nav.classList.contains("mobile-open")) {
+    const isClickInsideNav = nav.contains(event.target);
+    const isClickNavBtn = event.target.closest(".nav-btn");
+
+    if (!isClickInsideNav && !isClickNavBtn) {
+      nav.classList.remove("mobile-open");
+    }
+  }
+});

@@ -17,7 +17,7 @@
             </button>
           </div>
           <ul>
-            <li onclick="goTo('index.html')">Início</li>
+            <li onclick="goTo('index.html')">Portfólio</li>
             <li onclick="goTo('about.html')">Sobre mim</li>
             <li onclick="goTo('experience.html')">Experiência</li>
             <li onclick="goTo('contact.html')">Contato</li>
@@ -32,108 +32,145 @@
     <main>
       <section class="hero">
         <div class="flex flex-col gap-4">
-          <h2>Livros</h2>
+          <h2>Portfólio</h2>
+
+          <div class="card hero-content flex flex-row gap-4">
+            <img
+              src="assets/sgmasterweb.png"
+              alt="Imagem do livro 'A inconveniente loja de conveniência'"
+              class="company-logo"
+            />
+            <div class="relative">
+              <div>
+                <h4 class="card-title m-0" onclick="openBookPage('https://sgmaster.com.br/')">
+                  SG Master Web
+                </h4>
+                <p class="book-author">RP para pequenas e médias empresas.</p>
+              </div>
+              <p class="book-sinopsis">
+                <i
+                  >"No front-end participei da implementação de vários módulos, dentre eles se
+                  destacam: o módulo de ponto de venda (PDV), geração de etiquetas, geração de
+                  relatórios customizados, fluxo de multiplos pagamentos internos, buscas gerais no
+                  sistemas, módulo de troca de empresa, módulo de convênios, módulo de cadastro de
+                  natureza de operação, cadastro de veículos entre outros. Além disso, diversas
+                  integrações com APIs externas e manutenção geral do sistema."</i
+                >
+                <a href="https://sgmaster.com.br/" target="_blank" rel="noopener noreferrer"
+                  >ver mais</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="card hero-content flex flex-row gap-4">
+            <img
+              src="assets/ezbzlabs.png"
+              alt="Imagem do site comercial da empresa EZBZ"
+              class="company-logo"
+            />
+            <div class="relative">
+              <div>
+                <h4 class="card-title m-0" onclick="openBookPage('https://dev.ezbzlabs.com/')">
+                  Website EZBZ Labs
+                </h4>
+                <p class="book-author">Vue3.js, tailwind CSS e AOS.js</p>
+              </div>
+              <p class="book-sinopsis">
+                <i
+                  >"Um simples jogo da memória implementando Next.js, Tailwind CSS e shadcn como
+                  biblioteca de componentes."</i
+                >
+                <a href="https://dev.ezbzlabs.com/" target="_blank" rel="noopener noreferrer"
+                  >ver mais</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="card hero-content flex flex-row gap-4">
+            <img
+              src="assets/ip-finder.png"
+              alt="Imagem do website portfolio IP Finder."
+              class="company-logo"
+            />
+            <div class="relative">
+              <div>
+                <h4
+                  class="card-title m-0"
+                  onclick="openBookPage('https://lucashrqc.github.io/ip-finder/')"
+                >
+                  IP Finder
+                </h4>
+                <p class="book-author">IP finder com integrações.</p>
+              </div>
+              <p class="book-sinopsis">
+                <i
+                  >"App implementando com o simples objetivo de testar a integração com a API de
+                  mapas do MapLibre que. Permite que o usuário digite um IP e visualize a sua
+                  localização aproximada com latitude e longitude."</i
+                >
+                <a
+                  href="https://lucashrqc.github.io/ip-finder/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >ver mais</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="card hero-content flex flex-row gap-4">
+            <img
+              src="assets/memory-game.png"
+              alt="Imagem do site do jogo da memória feito por Lucas Henrique da Costa"
+              class="company-logo"
+            />
+            <div class="relative">
+              <div>
+                <h4
+                  class="card-title m-0"
+                  onclick="openBookPage('https://lucashrqc.github.io/react-memory-game/')"
+                >
+                  Jogo da memória
+                </h4>
+                <p class="book-author">Next.js, tailwind CSS, shadcn</p>
+              </div>
+              <p class="book-sinopsis">
+                <i
+                  >"Um simples jogo da memória implementando Next.js, Tailwind CSS e shadcn como
+                  biblioteca de componentes."</i
+                >
+                <a
+                  href="https://lucashrqc.github.io/react-memory-game/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >ver mais</a
+                >
+              </p>
+            </div>
+          </div>
           <div class="card hero-content flex flex-row gap-4 items-center">
             <img
-              src="https://m.media-amazon.com/images/I/51Q-xVXlMTL._SY466_.jpg"
-              alt="Imagem do livro 'Morro dos ventos uivantes'"
+              src="assets/camilavieira.png"
+              alt="Imagem da página inicial do site da Camila Vieira"
               class="company-logo"
             />
             <div class="relative">
               <div>
                 <h4
                   class="card-title m-0"
-                  onclick="openBookPage('https://www.amazon.com.br/Morro-dos-Ventos-Uivantes/dp/8594542186')"
+                  onclick="openBookPage('https://camilavieira.netlify.app/')"
                 >
-                  O Morro dos Ventos Uivantes
+                  Website Camila Vieira
                 </h4>
-                <p class="book-author">por Emily Brontë (Autor), Marcia Heloisa (Tradutor)</p>
-                <div class="book-price">R$ 75,92</div>
+                <p class="book-author">Site profissional elaborado para Camila Vieira</p>
               </div>
               <p class="book-sinopsis">
                 <i
-                  >"Turbulência, impetuosidade e misticismo. Originalmente publicado em 1847, O
-                  Morro dos Ventos Uivantes, de Emily Brontë, combina paixão e trevas de maneira
-                  surpreendente ― emoções que os leitores apaixonados pela DarkLove, marca da
-                  DarkSide® Books que revela as novas vozes femininas da literatura, conhecem bem.
-                  Se hoje as obras de Laura Purcell, Yangsze Choo, Kerri Maniscalco, Patrice
-                  Lawrence, Silvia Moreno-Garcia e tantas outras autoras inigualáveis encantam e
-                  fascinam, é porque mulheres igualmente talentosas decidiram dar vida a personagens
-                  e histórias inesquecíveis lá atrás..."</i
+                  >"Elaboração de um site profissional para a arquiteta Camila Vieira. O site conta
+                  com locomotive scroll, GSAP Animation e outras bibliotecas para animações
+                  básicas."</i
                 >
                 <a
-                  href="https://www.amazon.com.br/Morro-dos-Ventos-Uivantes/dp/8594542186"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >ver mais</a
-                >
-              </p>
-            </div>
-          </div>
-          <div class="card hero-content flex flex-row gap-4">
-            <img
-              src="https://m.media-amazon.com/images/I/918CJwZvvdL._SY466_.jpg"
-              alt="Imagem do livro 'A inconveniente loja de conveniência'"
-              class="company-logo"
-            />
-            <div class="relative">
-              <div>
-                <h4
-                  class="card-title m-0"
-                  onclick="openBookPage('https://www.amazon.com.br/inconveniente-loja-conveni%C3%AAncia-Kim-Ho-yeon/dp/655838244X/ref=sr_1_1?s=books&sr=1-1')"
-                >
-                  A inconveniente loja de conveniência
-                </h4>
-                <p class="book-author">por Kim Ho-yeon (Autor), Jae Hyung Woo (Tradutor)</p>
-                <div class="book-price">R$ 35,90</div>
-              </div>
-              <p class="book-sinopsis">
-                <i
-                  >"Dok-go mora na Estação Seul e passa seus dias olhando para a mesma loja de
-                  conveniência. Ele não tem lembranças do seu passado, mas sabe que daria tudo para
-                  beber uma dose de soju. Quando acha uma bolsinha com documentos e uma carteira,
-                  ele não faz a menor ideia de que sua vida está prestes a mudar. A senhora Yeom,
-                  uma professora de história aposentada, perdeu sua bolsinha na estação. Mas graças
-                  ao bom Deus que sempre a protege, assim que deu falta dos seus pertences, recebeu
-                  uma ligação de um telefone público informando que tinham sido encontrados..."</i
-                >
-                <a
-                  href="https://www.amazon.com.br/inconveniente-loja-conveni%C3%AAncia-Kim-Ho-yeon/dp/655838244X/ref=sr_1_1?s=books&sr=1-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >ver mais</a
-                >
-              </p>
-            </div>
-          </div>
-          <div class="card hero-content flex flex-row gap-4">
-            <img
-              src="https://m.media-amazon.com/images/I/81s51UO4t6L._SY425_.jpg"
-              alt="Imagem do livro 'A inconveniente loja de conveniência'"
-              class="company-logo"
-            />
-            <div class="relative">
-              <div>
-                <h4
-                  class="card-title m-0"
-                  onclick="openBookPage('https://www.amazon.com.br/Os-Irm%C3%A3os-Karamazov-Fiodor-Dostoievski/dp/8573265388')"
-                >
-                  Os Irmãos Karamázov
-                </h4>
-                <p class="book-author">por Fiódor Dostoiévski (Autor), Paulo Bezerra (Tradutor)</p>
-                <div class="book-price">R$ 67,59</div>
-              </div>
-              <p class="book-sinopsis">
-                <i
-                  >"Último romance de Dostoiévski, Os irmãos Karamázov representa uma síntese de
-                  toda sua produção e é tido por muitos como sua obra-prima. Um marco da literatura
-                  universal, influenciou pensadores como Nietzsche e Freud, que o considerava "o
-                  maior romance já escrito" e sucessivas gerações de escritores em todo o mundo. Um
-                  livro ao mesmo tempo filosófico e policial, que trata da conturbada relação entre
-                  o devasso Fiódor Karamázov e seus..."</i
-                >
-                <a
-                  href="https://www.amazon.com.br/Os-Irm%C3%A3os-Karamazov-Fiodor-Dostoievski/dp/8573265388"
+                  href="https://camilavieira.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   >ver mais</a

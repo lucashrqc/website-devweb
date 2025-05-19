@@ -26,7 +26,7 @@ header {
   left: 0;
   right: 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background: rgba(244, 244, 244, 0.6);
+  background: #f4f4f4bd;
   backdrop-filter: blur(2px);
   z-index: 100;
 }
@@ -282,17 +282,6 @@ textarea {
   font-size: 14px;
   margin-top: 10px;
   text-align: justify;
-}
-
-.book-price {
-  font-size: 14px;
-  width: fit-content;
-  padding: 5px;
-  margin-top: 5px;
-  background-color: #f1f1f1;
-  border-radius: 5px;
-  color: var(--primary-color);
-  border: 1px solid var(--primary-color);
 }
 
 /* Estilização pontual também abordada aqui */

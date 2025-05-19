@@ -13,26 +13,28 @@
         <nav>
           <div class="close-btn-container">
             <button type="button" class="close-btn" onclick="toggleMenu()">
-              <img src="./assets/close-icon.svg" alt="Fechar menu" class="close-icon" />
+              <img src="./assets/icons/close-icon.svg" alt="Fechar menu" class="close-icon" />
             </button>
           </div>
           <ul>
-            <li onclick="goTo('index.html')">Portfólio</li>
-            <li onclick="goTo('about.html')">Sobre mim</li>
-            <li onclick="goTo('experience.html')">Experiência</li>
-            <li onclick="goTo('contact.html')">Contato</li>
+           <li onclick="goTo('index.html')" class="index">Portfólio</li>
+            <li onclick="goTo('about.html')" class="about">Sobre mim</li>
+            <li onclick="goTo('experience.html')" class="experience">Experiência</li>
+            <li onclick="goTo('contact.html')" class="contact">Contato</li>
           </ul>
         </nav>
         <button type="button" class="nav-btn" onclick="toggleMenu()">
-          <img src="./assets/menu-icon.svg" alt="Menu" class="menu-icon" />
+          <img src="./assets/icons/menu-icon.svg" alt="Menu" class="menu-icon" />
         </button>
       </div>
     </header>
 
     <main>
-      <section class="portfolio">
+      <!-- Seção de Portfólio -->
+      <section class="curriculum">
         <h1>Currículo</h1>
 
+        <!-- Card de graduações -->
         <div class="card">
           <h4 class="card-title">Graduações</h4>
           <p class="card-description">
@@ -41,6 +43,7 @@
           <p class="card-description">2024 - Bacharel Ciências da Computação, Uninter.</p>
         </div>
 
+        <!-- Card de idiomas -->
         <div class="card">
           <h4 class="card-title">Idiomas</h4>
           <p class="card-description">Inglês - fluente</p>
@@ -48,9 +51,11 @@
         </div>
       </section>
 
+      <!-- Seção de Experiências -->
       <section class="experience">
         <h1>Experiências profissionais</h1>
 
+        <!-- Exp. Deloitte -->
         <div class="card">
           <img
             src="https://www.deloitte.com/content/dam/assets-shared/logos/svg/a-d/deloitte-logo.svg"
@@ -69,6 +74,7 @@
           </div>
         </div>
 
+        <!-- Exp. SGBR Sistemas -->
         <div class="card">
           <img
             src="https://sgmaster.com.br/images/fullLogo.svg"
@@ -89,6 +95,8 @@
             </p>
           </div>
         </div>
+
+        <!-- Exp. EZBZ Software -->
         <div class="card flex flex-col items-center justify-center">
           <img
             src="https://dev.ezbzlabs.com/assets/images/ezbzlogo.svg"
@@ -113,5 +121,6 @@
     </main>
   </body>
 
+  <!-- Script de navegação e responsividade -->
   <script src="./scripts/script.js"></script>
 </html>

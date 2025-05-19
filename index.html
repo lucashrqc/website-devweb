@@ -13,27 +13,29 @@
         <nav>
           <div class="close-btn-container">
             <button type="button" class="close-btn" onclick="toggleMenu()">
-              <img src="./assets/close-icon.svg" alt="Fechar menu" class="close-icon" />
+              <img src="./assets/icons/close-icon.svg" alt="Fechar menu" class="close-icon" />
             </button>
           </div>
           <ul>
-            <li onclick="goTo('index.html')">Portfólio</li>
-            <li onclick="goTo('about.html')">Sobre mim</li>
-            <li onclick="goTo('experience.html')">Experiência</li>
-            <li onclick="goTo('contact.html')">Contato</li>
+            <li onclick="goTo('index.html')" class="index">Portfólio</li>
+            <li onclick="goTo('about.html')" class="about">Sobre mim</li>
+            <li onclick="goTo('experience.html')" class="experience">Experiência</li>
+            <li onclick="goTo('contact.html')" class="contact">Contato</li>
           </ul>
         </nav>
         <button type="button" class="nav-btn" onclick="toggleMenu()">
-          <img src="./assets/menu-icon.svg" alt="Menu" class="menu-icon" />
+          <img src="./assets/icons/menu-icon.svg" alt="Menu" class="menu-icon" />
         </button>
       </div>
     </header>
 
     <main>
+      <!-- Seção de Portfólio -->
       <section class="hero">
         <div class="flex flex-col gap-4">
           <h2>Portfólio</h2>
 
+          <!-- Card da SGBR -->
           <div class="card hero-content flex flex-row gap-4">
             <img
               src="assets/sgmasterweb.png"
@@ -62,6 +64,8 @@
               </p>
             </div>
           </div>
+
+          <!-- Card da EZBZ -->
           <div class="card hero-content flex flex-row gap-4">
             <img
               src="assets/ezbzlabs.png"
@@ -86,6 +90,8 @@
               </p>
             </div>
           </div>
+
+          <!-- Card do IPFinder -->
           <div class="card hero-content flex flex-row gap-4">
             <img
               src="assets/ip-finder.png"
@@ -117,6 +123,8 @@
               </p>
             </div>
           </div>
+
+          <!-- Card do Memory Game -->
           <div class="card hero-content flex flex-row gap-4">
             <img
               src="assets/memory-game.png"
@@ -147,6 +155,8 @@
               </p>
             </div>
           </div>
+
+          <!-- Card da Camila Vieira -->
           <div class="card hero-content flex flex-row gap-4 items-center">
             <img
               src="assets/camilavieira.png"
@@ -179,6 +189,8 @@
             </div>
           </div>
         </div>
+
+        <!-- Aside para acesso sobre mim. -->
         <aside class="card aside">
           <div class="profile" onclick="goTo('about.html')">
             <img
@@ -198,5 +210,6 @@
     </main>
   </body>
 
+  <!-- Scripts para navegação e responsividade -->
   <script src="./scripts/script.js"></script>
 </html>

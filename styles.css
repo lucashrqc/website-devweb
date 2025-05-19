@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+/* Definição de cores primárias */
 :root {
   --primary-color: #4a90e2;
   --secondary-color: #326096;
@@ -71,7 +72,8 @@ nav ul li::after {
   transition: width 0.2s ease-in-out;
 }
 
-nav ul li:hover::after {
+nav ul li:hover::after,
+nav ul li.active::after {
   width: 100%;
 }
 
@@ -125,7 +127,7 @@ main.about-main {
 
 section.experience,
 section.contact,
-section.portfolio,
+section.curriculum,
 section.about {
   display: flex;
   flex-direction: column;
@@ -140,7 +142,7 @@ section.about .card {
   gap: 20px;
 }
 
-section.portfolio {
+section.curriculum {
   margin-bottom: 30px;
 }
 
@@ -155,7 +157,7 @@ section.experience .card-description {
   padding: 0px;
 }
 
-section.portfolio .card-description {
+section.curriculum .card-description {
   margin-bottom: 5px;
 }
 
@@ -284,7 +286,7 @@ textarea {
   text-align: justify;
 }
 
-/* Estilização pontual também abordada aqui */
+/* Estilização pontual também abordada aqui, porém não utilizei muito porque o objetivo não era construir um tailwindcss. */
 .flex {
   display: flex;
 }
@@ -314,7 +316,7 @@ textarea {
 }
 /* ---------------------------------------- */
 
-/* Media Queries */
+/* Media Queries para responsividade em mobile */
 @media screen and (max-width: 768px) {
   div.header-container {
     padding: 15px;
@@ -324,6 +326,7 @@ textarea {
     display: flex;
   }
 
+  /* Responsividade da navbar */
   nav {
     position: absolute;
     top: 0;
@@ -338,6 +341,7 @@ textarea {
     display: flex;
   }
 
+  /* Responsividade da navbar quando aberta */
   nav.mobile-open {
     background-color: var(--bg-color);
     transform: translateX(0);
@@ -350,6 +354,7 @@ textarea {
     gap: 20px;
   }
 
+  /* Posicionamento do botão para fechar menu de navegação enquanto mobile */
   nav div.close-btn-container button.close-btn {
     display: flex;
     position: absolute;

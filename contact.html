@@ -13,18 +13,18 @@
         <nav>
           <div class="close-btn-container">
             <button type="button" class="close-btn" onclick="toggleMenu()">
-              <img src="./assets/close-icon.svg" alt="Fechar menu" class="close-icon" />
+              <img src="./assets/icons/close-icon.svg" alt="Fechar menu" class="close-icon" />
             </button>
           </div>
           <ul>
-            <li onclick="goTo('index.html')">Portfólio</li>
-            <li onclick="goTo('about.html')">Sobre mim</li>
-            <li onclick="goTo('experience.html')">Experiência</li>
-            <li onclick="goTo('contact.html')">Contato</li>
+           <li onclick="goTo('index.html')" class="index">Portfólio</li>
+            <li onclick="goTo('about.html')" class="about">Sobre mim</li>
+            <li onclick="goTo('experience.html')" class="experience">Experiência</li>
+            <li onclick="goTo('contact.html')" class="contact">Contato</li>
           </ul>
         </nav>
         <button type="button" class="nav-btn" onclick="toggleMenu()">
-          <img src="./assets/menu-icon.svg" alt="Menu" class="menu-icon" />
+          <img src="./assets/icons/menu-icon.svg" alt="Menu" class="menu-icon" />
         </button>
       </div>
     </header>
@@ -32,6 +32,8 @@
     <main class="contact">
       <section class="contact">
         <h1>Entre em contato</h1>
+
+        <!-- Formulário de contato -->
         <div class="card">
           <form id="contact-form" onsubmit="onSend(event)">
             <div>
@@ -55,6 +57,9 @@
     </main>
   </body>
 
+  <!-- Scripts para navegação e responsividade -->
   <script src="./scripts/script.js"></script>
+
+  <!-- Script para submissão do formulário -->
   <script src="./scripts/contact.js"></script>
 </html>

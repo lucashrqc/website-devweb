@@ -12,7 +12,6 @@ function toggleMenu() {
   if (!menu) return;
   menu.classList.toggle("mobile-open");
 }
-
 // Abre uma nova página ao clicar no botão "ver mais" ou no título do livro
 function openBookPage(url) {
   window.open(url, "_blank", "noopener,noreferrer");
@@ -31,4 +30,16 @@ window.addEventListener("click", (event) => {
       nav.classList.remove("mobile-open");
     }
   }
+});
+
+// Adiciona o sublinhado no menu de navegação conforme a página atual.
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll("nav ul li");
+  const currentPage = window.location.pathname.split("/").pop().split(".")[0];
+
+  navLinks.forEach((link) => {
+    if (link.classList.contains(currentPage)) {
+      link.classList.add("active");
+    }
+  });
 });

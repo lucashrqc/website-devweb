@@ -1,4 +1,4 @@
-// Função para redireiconar para demais páginas
+// Função para redirecionar para demais páginas
 function goTo(page, element) {
   window.location.href = page;
 }
